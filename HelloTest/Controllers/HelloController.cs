@@ -19,11 +19,11 @@ namespace HelloTest.Controllers
 
 				if (envTest != null)
 				{
-					return new JsonResult(("Sorry, you failed."));
+					return new JsonResult(("Hello World" + " " + envTest));
 				}
 				else
 				{
-					return new JsonResult(("Hello World" + " " + envTest));
+					return new JsonResult(("Sorry you failed."));
 				}
 			}
 			catch (Exception e)
